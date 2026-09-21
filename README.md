@@ -22,9 +22,18 @@
 <img width="891" height="360" alt="{8241F14A-3B31-4EBA-BCCA-3CA2BEFDC9E8}" src="https://github.com/user-attachments/assets/070c2c20-8100-429c-8f1c-1152a8076974" />
 
 # PROBLEMA 8
+<img width="919" height="767" alt="{18F14844-1CD7-46FC-BAE2-F394754D0947}" src="https://github.com/user-attachments/assets/3b753149-dbec-4cf7-9fa6-e6a03f760076" />
 
 # PROBLEMA 9
+<img width="897" height="421" alt="{4A722311-3FD2-4FC5-9C45-4736665CAFC6}" src="https://github.com/user-attachments/assets/d5e755b2-ef0d-42a6-a84a-1084addc0933" />
 
 # PROBLEMA 10
+<img width="928" height="504" alt="{AA9C54B7-8134-4EDD-9917-66F85175CE20}" src="https://github.com/user-attachments/assets/41ad88cd-ec41-43f6-9104-cce79e45a3b8" />
 
 # PROBLEMA 11
+
+<img width="1920" height="1017" alt="{B1B80A06-015E-4432-86AD-B1DF107A17E2}" src="https://github.com/user-attachments/assets/8c78fb0c-d57f-4224-890e-bcaa769b73ae" />
+
+# PROBLEMA 12
+
+# PROBLEMA 13
