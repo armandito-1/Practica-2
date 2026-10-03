@@ -115,9 +115,12 @@ and g5(Y[4],C,Bnot,A); //101
 and g6(Y[5],C,B,Anot); //110
 
 endmodule
+## presentado en clase
 
 # PROBLEMA 12
 <img width="1346" height="688" alt="{C118DF7B-1F1F-47E1-BA5C-2B112AD0B1AC}" src="https://github.com/user-attachments/assets/5d1c89c0-eab9-45ca-84ca-82cd86bbdae1" />
+<img width="1621" height="969" alt="{7313D213-7910-4013-9214-AD7BDF5130F1}" src="https://github.com/user-attachments/assets/1c266310-535b-4665-9f7d-4aa1e71db385" />
+<img width="1920" height="1018" alt="{7FB9A880-3613-4900-BBF0-6660BD50812F}" src="https://github.com/user-attachments/assets/de4148f2-db7f-40a6-a5ed-229ac9a29319" />
 
 ## codifo de verilog
 module bcd_gray_display (
@@ -208,8 +211,11 @@ module bcd_gray_display (
     end
 
 endmodule
+## presentado en clase
 
 # PROBLEMA 13
+<img width="1920" height="1017" alt="{97AC6D98-C5A8-4729-8708-F100CE49BF59}" src="https://github.com/user-attachments/assets/1d760a52-c53f-4710-9d46-cfe98e77e562" />
+<img width="1920" height="1014" alt="{6D2B5F7C-74DB-45D4-B0AC-497A36487F80}" src="https://github.com/user-attachments/assets/277d7443-340f-4be4-beeb-2cabae0d9c98" />
 
 ## codigo de verilog
 module PedroPascal(
