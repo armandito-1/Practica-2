@@ -1,3 +1,5 @@
+
+
 # PROBLEMA 1
 <img width="888" height="813" alt="{BA670F2A-D222-44DB-89AC-C79D431A8DF7}" src="https://github.com/user-attachments/assets/6eae7c29-c3d5-4aab-95bf-33f736d2da4c" />
 <img width="1915" height="834" alt="{CD2C968C-5677-4994-9755-FF36CF86B178}" src="https://github.com/user-attachments/assets/989766a7-1b4d-4521-97cf-30e12d0acd4c" />
@@ -40,6 +42,8 @@
 # PROBLEMA 10
 <img width="928" height="504" alt="{AA9C54B7-8134-4EDD-9917-66F85175CE20}" src="https://github.com/user-attachments/assets/41ad88cd-ec41-43f6-9104-cce79e45a3b8" />
 <img width="1920" height="976" alt="{468AB681-1F80-4816-9F6E-4E9A005D392C}" src="https://github.com/user-attachments/assets/59a0f219-8bb7-41a2-a22c-b2b723519287" />
+
+https://youtube.com/shorts/0LhtA5G9N5I?feature=share
 
 # PROBLEMA 11
 
