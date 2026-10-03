@@ -1,15 +1,21 @@
 # PROBLEMA 1
 <img width="888" height="813" alt="{BA670F2A-D222-44DB-89AC-C79D431A8DF7}" src="https://github.com/user-attachments/assets/6eae7c29-c3d5-4aab-95bf-33f736d2da4c" />
-
+<img width="1915" height="834" alt="{CD2C968C-5677-4994-9755-FF36CF86B178}" src="https://github.com/user-attachments/assets/989766a7-1b4d-4521-97cf-30e12d0acd4c" />
+## presentado en clase
 # PROBLEMA 2
 <img width="849" height="483" alt="{B929B4C7-F325-4629-90EF-B67ED70CC23A}" src="https://github.com/user-attachments/assets/95ebf0ab-cedc-4edd-afba-22be1645ceda" />
 <img width="839" height="324" alt="{FB8B73D2-FBCE-4071-BA25-340C5C3BA71E}" src="https://github.com/user-attachments/assets/6dbac629-d1a6-41bb-a9a5-10d053c7b3b1" />
+<img width="1920" height="943" alt="{90D53269-EC6C-4E51-923F-9FD669783795}" src="https://github.com/user-attachments/assets/53cfdc3b-72b4-477d-a84b-95641865ca4f" />
 
+## presentado en clase
 # PROBLEMA 3
 <img width="831" height="776" alt="{3D1EC905-5DCF-410F-B51F-8FBD30BB7FA6}" src="https://github.com/user-attachments/assets/6961134a-6e20-4bb6-909a-375b7dfc15ee" />
+<img width="1920" height="1017" alt="{B5E29604-A52A-4151-B72F-0A2198B52E46}" src="https://github.com/user-attachments/assets/522d847f-f317-44b2-981f-d588e7e7a5a1" />
 
+## presentado en clase
 # PROBLEMA 4
 <img width="839" height="299" alt="{EE43BB92-CB7F-4BEB-B9D3-EE5848EA6C67}" src="https://github.com/user-attachments/assets/b4deb723-3af5-4652-b07a-4f45c95dfc5a" />
+<img width="1920" height="891" alt="image" src="https://github.com/user-attachments/assets/3074a3a4-4ebf-4c11-bf7b-926c266a27b0" />
 
 # PROBLEMA 5
 <img width="859" height="384" alt="{22230A59-9767-410B-AF01-43BA6CC677C8}" src="https://github.com/user-attachments/assets/8b5503f9-8e14-4536-a4b7-0b07b3e7af57" />
@@ -17,15 +23,19 @@
 
 # PROBLEMA 6
 <img width="878" height="371" alt="{4C402B20-4A08-4238-96B2-B25CFE6A2CA7}" src="https://github.com/user-attachments/assets/ce89c6e6-5d57-46d5-a3d0-3b17ed8c3c60" />
+<img width="1920" height="948" alt="{16836A32-A985-47CF-8520-3500F6B50614}" src="https://github.com/user-attachments/assets/cdeb3056-9bf0-4a89-887a-ce9c579f8bdb" />
 
 # PROBLEMA 7
 <img width="891" height="360" alt="{8241F14A-3B31-4EBA-BCCA-3CA2BEFDC9E8}" src="https://github.com/user-attachments/assets/070c2c20-8100-429c-8f1c-1152a8076974" />
+<img width="1912" height="1015" alt="{455D870C-FCB6-476E-95EB-72BC652AC92E}" src="https://github.com/user-attachments/assets/5c19c71d-2b68-49ed-9a0e-d375756613db" />
 
 # PROBLEMA 8
 <img width="919" height="767" alt="{18F14844-1CD7-46FC-BAE2-F394754D0947}" src="https://github.com/user-attachments/assets/3b753149-dbec-4cf7-9fa6-e6a03f760076" />
+<img width="1920" height="880" alt="{244D04E9-ACAC-4A03-A522-DB5EB447D1DD}" src="https://github.com/user-attachments/assets/02038843-c071-4840-979c-5b25f49a74bc" />
 
 # PROBLEMA 9
 <img width="897" height="421" alt="{4A722311-3FD2-4FC5-9C45-4736665CAFC6}" src="https://github.com/user-attachments/assets/d5e755b2-ef0d-42a6-a84a-1084addc0933" />
+<img width="1920" height="1017" alt="{D9BDEB2E-653A-44F2-85C3-051F2158BAEA}" src="https://github.com/user-attachments/assets/69862b0c-40c0-4c68-8c60-4e28bcd7103e" />
 
 # PROBLEMA 10
 <img width="928" height="504" alt="{AA9C54B7-8134-4EDD-9917-66F85175CE20}" src="https://github.com/user-attachments/assets/41ad88cd-ec41-43f6-9104-cce79e45a3b8" />
@@ -116,6 +126,8 @@ and g6(Y[5],C,B,Anot); //110
 
 endmodule
 ## presentado en clase
+<img width="1920" height="1016" alt="{D5CB4FA4-C171-43D9-ACBC-5343E7031FCD}" src="https://github.com/user-attachments/assets/a931514f-8389-4a6a-b8d7-3508b0c7bc1a" />
+<img width="1920" height="1013" alt="{1F9C18F4-E109-4D1A-9292-CD266657181D}" src="https://github.com/user-attachments/assets/4ea4b1b4-91f4-45cb-ba9d-e9566f2b213b" />
 
 # PROBLEMA 12
 <img width="1346" height="688" alt="{C118DF7B-1F1F-47E1-BA5C-2B112AD0B1AC}" src="https://github.com/user-attachments/assets/5d1c89c0-eab9-45ca-84ca-82cd86bbdae1" />
