@@ -39,6 +39,7 @@
 
 # PROBLEMA 10
 <img width="928" height="504" alt="{AA9C54B7-8134-4EDD-9917-66F85175CE20}" src="https://github.com/user-attachments/assets/41ad88cd-ec41-43f6-9104-cce79e45a3b8" />
+<img width="1920" height="976" alt="{468AB681-1F80-4816-9F6E-4E9A005D392C}" src="https://github.com/user-attachments/assets/59a0f219-8bb7-41a2-a22c-b2b723519287" />
 
 # PROBLEMA 11
 
@@ -446,3 +447,7 @@ module HEX7SEG (
     end
 
 endmodule
+https://youtu.be/ilncPM9-bTY 
+https://youtube.com/shorts/6wvCcqRMb7M?feature=share
+
+
