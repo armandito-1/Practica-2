@@ -117,5 +117,314 @@ and g6(Y[5],C,B,Anot); //110
 endmodule
 
 # PROBLEMA 12
+<img width="1346" height="688" alt="{C118DF7B-1F1F-47E1-BA5C-2B112AD0B1AC}" src="https://github.com/user-attachments/assets/5d1c89c0-eab9-45ca-84ca-82cd86bbdae1" />
+
+## codifo de verilog
+module bcd_gray_display (
+    input      [3:0] BCD,
+    output     [3:0] LED_GRAY,
+    output           ERROR,
+    output reg [6:0] HEX4,
+    output reg [6:0] HEX5
+);
+
+    /*
+     * La entrada es invalida cuando el valor binario
+     * ingresado es mayor que 9.
+     */
+    assign ERROR = (BCD > 4'd9);
+
+    /*
+     * Conversion de binario/BCD a codigo Gray.
+     */
+    assign LED_GRAY[3] = BCD[3];
+    assign LED_GRAY[2] = BCD[3] ^ BCD[2];
+    assign LED_GRAY[1] = BCD[2] ^ BCD[1];
+    assign LED_GRAY[0] = BCD[1] ^ BCD[0];
+
+    /*
+     * Decodificador BCD a 7 segmentos.
+     *
+     * HEX4: quinto display fisico, muestra el numero.
+     * HEX5: sexto display fisico, muestra la letra E.
+     *
+     * Los displays de la DE0-CV son activos en bajo:
+     * 0 = segmento encendido
+     * 1 = segmento apagado
+     *
+     * Orden de los bits:
+     * HEX[6:0] = {g, f, e, d, c, b, a}
+     */
+    always @(*) begin
+
+        /*
+         * Valores predeterminados:
+         * ambos displays apagados.
+         */
+        HEX4 = 7'b1111111;
+        HEX5 = 7'b1111111;
+
+        if (ERROR == 1'b1) begin
+
+            /*
+             * Entrada invalida: valores entre 10 y 15.
+             *
+             * HEX4 queda apagado.
+             * HEX5 muestra la letra E.
+             */
+            HEX4 = 7'b1111111;
+            HEX5 = 7'b0000110;
+
+        end
+        else begin
+
+            /*
+             * Entrada valida: valores entre 0 y 9.
+             *
+             * HEX5 queda apagado.
+             * HEX4 muestra el numero ingresado.
+             */
+            HEX5 = 7'b1111111;
+
+            case (BCD)
+
+                4'd0: HEX4 = 7'b1000000; // Numero 0
+                4'd1: HEX4 = 7'b1111001; // Numero 1
+                4'd2: HEX4 = 7'b0100100; // Numero 2
+                4'd3: HEX4 = 7'b0110000; // Numero 3
+                4'd4: HEX4 = 7'b0011001; // Numero 4
+                4'd5: HEX4 = 7'b0010010; // Numero 5
+                4'd6: HEX4 = 7'b0000010; // Numero 6
+                4'd7: HEX4 = 7'b1111000; // Numero 7
+                4'd8: HEX4 = 7'b0000000; // Numero 8
+                4'd9: HEX4 = 7'b0010000; // Numero 9
+
+                default: HEX4 = 7'b1111111;
+
+            endcase
+
+        end
+
+    end
+
+endmodule
 
 # PROBLEMA 13
+
+## codigo de verilog
+module PedroPascal(
+
+    // =========================================
+    // ENTRADAS
+    // =========================================
+
+    input wire [4:0] A,
+    input wire [4:0] B,
+
+    // OP corresponde a los cuatro botones KEY
+    input wire [3:0] OP,
+
+    // =========================================
+    // SALIDAS
+    // =========================================
+
+    output wire [4:0] F,
+    output wire COUT,
+
+    output wire [6:0] HEX0,
+    output wire [6:0] HEX1
+
+);
+
+    // =========================================
+    // VARIABLES INTERNAS
+    // =========================================
+
+    reg [4:0] resultado;
+    reg carry;
+
+    // Los botones de la DE0-CV son activos en bajo.
+    // Por eso invertimos OP.
+    wire [3:0] OP_REAL;
+
+    assign OP_REAL = ~OP;
+
+
+    // =========================================
+    // UNIDAD ARITMETICO LOGICA
+    // =========================================
+
+    always @(*) begin
+
+        // Valores por defecto
+        resultado = 5'b00000;
+        carry = 1'b0;
+
+        case (OP_REAL)
+
+            // =====================================
+            // INSTRUCCION 0
+            // F = A
+            // =====================================
+
+            4'h0: begin
+
+                resultado = A;
+                carry = 1'b0;
+
+            end
+
+
+            // =====================================
+            // INSTRUCCION 1
+            // F = A + 1
+            // =====================================
+
+            4'h1: begin
+
+                {carry, resultado} =
+                    {1'b0, A} + 6'b000001;
+
+            end
+
+
+            // =====================================
+            // INSTRUCCION 5
+            // F = A + B' + 1
+            // =====================================
+
+            4'h5: begin
+
+                {carry, resultado} =
+                    {1'b0, A} +
+                    {1'b0, ~B} +
+                    6'b000001;
+
+            end
+
+
+            // =====================================
+            // INSTRUCCION B
+            // F = A OR B
+            // =====================================
+
+            4'hB: begin
+
+                resultado = A | B;
+                carry = 1'b0;
+
+            end
+
+
+            // =====================================
+            // INSTRUCCION D
+            // F = (A > B)
+            // =====================================
+
+            4'hD: begin
+
+                if (A > B)
+                    resultado = 5'b00001;
+                else
+                    resultado = 5'b00000;
+
+                carry = 1'b0;
+
+            end
+
+
+            // =====================================
+            // CUALQUIER OTRA INSTRUCCION
+            // =====================================
+
+            default: begin
+
+                resultado = 5'b00000;
+                carry = 1'b0;
+
+            end
+
+        endcase
+
+    end
+
+
+    // =========================================
+    // CONEXION DE LAS SALIDAS
+    // =========================================
+
+    assign F = resultado;
+
+    assign COUT = carry;
+
+
+    // =========================================
+    // DISPLAY HEX0
+    // MUESTRA LOS 4 BITS INFERIORES
+    // =========================================
+
+    HEX7SEG DISPLAY0 (
+
+        .HEX(resultado[3:0]),
+        .SEG(HEX0)
+
+    );
+
+
+    // =========================================
+    // DISPLAY HEX1
+    // MUESTRA EL BIT 4
+    // =========================================
+
+    HEX7SEG DISPLAY1 (
+
+        .HEX({3'b000, resultado[4]}),
+        .SEG(HEX1)
+
+    );
+
+endmodule
+
+
+
+// ========================================================
+// DECODIFICADOR PARA DISPLAY DE 7 SEGMENTOS
+// ========================================================
+
+module HEX7SEG (
+
+    input wire [3:0] HEX,
+    output reg [6:0] SEG
+
+);
+
+    always @(*) begin
+
+        case (HEX)
+
+            4'h0: SEG = 7'b1000000;
+            4'h1: SEG = 7'b1111001;
+            4'h2: SEG = 7'b0100100;
+            4'h3: SEG = 7'b0110000;
+            4'h4: SEG = 7'b0011001;
+            4'h5: SEG = 7'b0010010;
+            4'h6: SEG = 7'b0000010;
+            4'h7: SEG = 7'b1111000;
+            4'h8: SEG = 7'b0000000;
+            4'h9: SEG = 7'b0010000;
+
+            4'hA: SEG = 7'b0001000;
+            4'hB: SEG = 7'b0000011;
+            4'hC: SEG = 7'b1000110;
+            4'hD: SEG = 7'b0100001;
+            4'hE: SEG = 7'b0000110;
+            4'hF: SEG = 7'b0001110;
+
+            default:
+                SEG = 7'b1111111;
+
+        endcase
+
+    end
+
+endmodule
